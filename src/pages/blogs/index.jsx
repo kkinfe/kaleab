@@ -7,56 +7,43 @@ import siteMeta from "@/data/siteMeta";
 
 function Article({ article }) {
   return (
-    <article className="md:grid md:grid-cols-4 md:items-baseline">
+    <article className="grid grid-cols-2 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`/articles/${article.slug}`}>
-          {article.title}
-        </Card.Title>
-        <Card.Eyebrow
-          as="time"
-          dateTime={article.date}
-          className="md:hidden"
-          decorate
-        >
+        <Card.Title href={`/blogs/${article.slug}`}>{article.title}</Card.Title>
+        <Card.Eyebrow as="time" dateTime={article.date} decorate>
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
         <Card.Cta>Read article</Card.Cta>
       </Card>
-      <Card.Eyebrow
-        as="time"
-        dateTime={article.date}
-        className="mt-1 hidden md:block"
-      >
-        {formatDate(article.date)}
-      </Card.Eyebrow>
     </article>
   );
 }
 
 export default function ArticlesIndex({ articles }) {
-  const headline = "I write about things I’m learning and things I’m building.";
+  const headline =
+    "I write about things I&apos;m learning and things I&apos;m building.";
   const intro =
     "All of my long-form thoughts on programming, leadership, infrastructure, and more, collected in chronological order.";
 
   return (
     <>
       <NextSeo
-        title="Blogs - Kaleab Kinfe"
+        title="Blogs - Kaleab K. Tekleab's Official Website"
         description={siteMeta.description}
-        canonical="https://kkinfe.github.io/kaleab/articles"
+        canonical="https://kkinfe.github.io"
         openGraph={{
-          url: "https://kkinfe.github.io/kaleab/articles",
+          url: "https://kkinfe.github.io",
           images: [
             {
-              url: `https://kkinfe.github.io/kaleab/api/og?title=Articles&desc=${headline}`,
+              url: `https://kkinfe.github.io/favicon.ico`,
               width: 1200,
               height: 600,
               alt: "Og Image Alt",
-              type: "image/jpeg",
+              type: "image/png",
             },
           ],
-          siteName: "https://kkinfe.github.io/kaleab/",
+          siteName: "Kaleab K. Tekleab's official website",
         }}
       />
       <SimpleLayout title={headline} intro={intro}>

@@ -29,9 +29,15 @@ const modeScript = `
     }, 0)
   }
 
+  function removeEventListeners() {
+  darkModeMediaQuery.removeEventListener('change', updateModeWithoutTransitions);
+  window.removeEventListener('storage', updateModeWithoutTransitions);
+  }
+
   function updateModeWithoutTransitions() {
     disableTransitionsTemporarily()
     updateMode()
+    removeEventListeners()
   }
 `;
 
