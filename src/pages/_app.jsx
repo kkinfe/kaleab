@@ -2,8 +2,6 @@ import { useEffect, useRef } from "react";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import SEO from "./next-seo.config";
-import { DefaultSeo } from "next-seo";
 
 import "@/styles/tailwind.css";
 import "focus-visible";
@@ -30,7 +28,6 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <DefaultSeo {...SEO} />
       <MDXProvider components={components}>
         <div className="fixed inset-0 flex justify-center sm:px-8">
           <div className="flex w-full max-w-7xl lg:px-8">
