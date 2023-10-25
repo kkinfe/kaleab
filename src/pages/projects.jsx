@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import {LinkIcon} from '@/components/Icons/LinkIcon'
+import {LinkIcon} from '@/components/icons/LinkIcon'
 
 import siteMeta, { projects } from '@/data/siteMeta'
 

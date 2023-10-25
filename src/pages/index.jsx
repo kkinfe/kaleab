@@ -9,7 +9,7 @@ import {
   LinkedInIcon,
   MailIcon,
 } from "@/components/icons/SocialIcons";
-import {LinkIcon} from '@/components/Icons/LinkIcon'
+import {LinkIcon} from '@/components/icons/LinkIcon'
 
 import { generateRssFeed } from "@/lib/generateRssFeed";
 import { getAllArticles } from "@/lib/getAllArticles";
