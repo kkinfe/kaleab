@@ -21,9 +21,9 @@ export const projects = [
     link: { href: "https://github.com/kkinfe", label: "github.com" },
   },
   {
-    name: "Bet-Lebosa",
+    name: "Smart-Sprouts",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
+      "Automating Efficient Irrigation for Plant Growth.",
     link: { href: "https://github.com/kkinfe", label: "github.com" },
   },
   {
