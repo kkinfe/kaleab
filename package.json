@@ -11,6 +11,7 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@mapbox/rehype-prism": "^0.8.0",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.5.6",
@@ -26,6 +27,7 @@
     "rehype-preset-minify": "^7.0.0",
     "rehype-prism-plus": "^1.6.3",
     "remark-gfm": "^4.0.0",
+    "sharp": "^0.32.6",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
