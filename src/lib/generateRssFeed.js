@@ -6,15 +6,15 @@ import { getAllArticles } from "./getAllArticles";
 
 export async function generateRssFeed() {
   let articles = await getAllArticles();
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  let siteUrl = "https://kkinfe.github.io/";
   let author = {
     name: "Kaleab Kinfe",
-    email: "me@brian.dev",
+    email: "Kaleab.kinfe.tekleab@gmail.com",
   };
 
   let feed = new Feed({
     title: author.name,
-    description: "Kaleab Kinfe - Blog",
+    description: "Kaleab Kinfe is a Software developer, freelancer and open source practitioner.",
     author,
     id: siteUrl,
     link: siteUrl,

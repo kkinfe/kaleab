@@ -11,7 +11,7 @@ const siteMeta = {
     github: "https://github.com/kkinfe",
     linkedin: "https://linkedin.com/in/kaleabkinfe",
   },
-  siteUrl: "kkinfe.github.io",
+  siteUrl: "https://kkinfe.github.io/",
 };
 export const projects = [
   {
