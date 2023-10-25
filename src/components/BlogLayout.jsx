@@ -20,7 +20,7 @@ function ArrowLeftIcon(props) {
   );
 }
 
-export function ArticleLayout({
+export function BlogLayout({
   children,
   meta,
   isRssFeed = false,
@@ -34,7 +34,7 @@ export function ArticleLayout({
   return (
     <>
       <NextSeo
-        title={siteMeta.title}
+        title="Blogs - Kaleab K. Tekleab's Official Website"
         description={siteMeta.description}
         canonical="https://kkinfe.github.io"
         openGraph={{
