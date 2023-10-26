@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from "next/link";
 
 import { Card } from "@/components/Card";
@@ -11,9 +12,10 @@ import {
 } from "@/components/icons/SocialIcons";
 import {LinkIcon} from '@/components/icons/LinkIcon'
 
-import siteMeta, { projects } from "@/data/siteMeta";
-import { NextSeo } from "next-seo";
+import { projects } from "@/data/siteMeta";
 
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -23,27 +25,14 @@ function SocialLink({ icon: Icon, ...props }) {
   );
 }
 
-export default function Home() {
-  return (
-    <>
-      <NextSeo
-        title="Kaleab K. Tekleab's Official Website"
-        description={siteMeta.description}
-        canonical="https://kkinfe.github.io"
-        openGraph={{
-          url: "https://kkinfe.github.io",
-          images: [
-            {
-              url: `https://kkinfe.github.io/favicon.ico`,
-              width: 1200,
-              height: 600,
-              alt: "Og Image Alt",
-              type: "image/png",
-            },
-          ],
-          siteName: "Kaleab K. Tekleab's official website",
-        }}
-      />
+const Fallback = () => (
+  <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
+        <link rel="apple-touch-icon" href="/iconx/apple-touch-icon.png"/>
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+      <Header/>
       <Container className="mt-9">
         <div className="max-w-2xl text-lg">
           <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -95,7 +84,6 @@ export default function Home() {
         </div>
       </Container>
 
-      
       <Container id="projects" className="mt-12 md:mt-12">
         <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
           Projects
@@ -118,6 +106,8 @@ export default function Home() {
           ))}
         </ul>
       </Container>
-    </>
-  );
-}
+      <Footer/>
+  </>
+)
+
+export default Fallback

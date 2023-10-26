@@ -105,9 +105,9 @@ setDefaultHandler(new StaleWhileRevalidate())
 // This "catch" handler is triggered when any of the other routes fail to
 // generate a response.
 setCatchHandler(({ event }) => {
-  // The fallback_URL entries must be added to the cache ahead of time, either
+  // The FALLBACK_URL entries must be added to the cache ahead of time, either
   // via runtime or precaching. If they are precached, then call
-  // `matchPrecache(fallback_URL)` (from the `workbox-precaching` package)
+  // `matchPrecache(FALLBACK_URL)` (from the `workbox-precaching` package)
   // to get the response from the correct cache.
   //
   // Use event, request, and url to figure out how to respond.
@@ -126,7 +126,7 @@ setCatchHandler(({ event }) => {
       break
     case 'font':
     // If using precached URLs:
-    // return matchPrecache(fallback_FONT_URL);
+    // return matchPrecache(FALLBACK_FONT_URL);
     //return caches.match('/static/fonts/fallback.otf')
     //break
     default:
