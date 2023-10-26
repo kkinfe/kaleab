@@ -3,8 +3,7 @@
   "short_name": "Kaleab K.",
   "description": "",
   "start_url": "/",
-  "display": "standalone",
-  "scope": "/",
+  "display": "standalone",  
   "theme_color": "#000000",
   "background_color": "#FFFFFF",
   "icons": [

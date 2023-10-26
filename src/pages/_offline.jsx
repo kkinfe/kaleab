@@ -12,7 +12,8 @@ import {
 } from "@/components/icons/SocialIcons";
 import {LinkIcon} from '@/components/icons/LinkIcon'
 
-import { projects } from "@/data/siteMeta";
+import siteMeta, { projects } from "@/data/siteMeta";
+import { NextSeo } from "next-seo";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -27,6 +28,24 @@ function SocialLink({ icon: Icon, ...props }) {
 
 const Fallback = () => (
   <>
+      <NextSeo
+        title="Kaleab K. Tekleab's Official Website"
+        description={siteMeta.description}
+        canonical="https://kkinfe.github.io"
+        openGraph={{
+          url: "https://kkinfe.github.io",
+          images: [
+            {
+              url: `https://kkinfe.github.io/favicon.ico`,
+              width: 1200,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/png",
+            },
+          ],
+          siteName: "Kaleab K. Tekleab's official website",
+        }}
+      />
       <Head>
         <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
         <link rel="apple-touch-icon" href="/iconx/apple-touch-icon.png"/>
