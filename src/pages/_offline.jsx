@@ -11,26 +11,9 @@ import {
 } from "@/components/icons/SocialIcons";
 import {LinkIcon} from '@/components/icons/LinkIcon'
 
-import { generateRssFeed } from "@/lib/generateRssFeed";
-import { getAllArticles } from "@/lib/getAllArticles";
-import { formatDate } from "@/lib/formatDate";
 import siteMeta, { projects } from "@/data/siteMeta";
 import { NextSeo } from "next-seo";
 
-
-
-function Article({ article }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/blogs/${article.slug}`}>{article.title}</Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  );
-}
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -40,7 +23,7 @@ function SocialLink({ icon: Icon, ...props }) {
   );
 }
 
-export default function Home({ articles }) {
+export default function Home() {
   return (
     <>
       <NextSeo
@@ -113,17 +96,6 @@ export default function Home({ articles }) {
       </Container>
 
       
-      {/* <Container id="blogs" className="mt-12 md:mt-12">
-        <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
-          Blogs
-        </h1>
-        <div className="mx-auto mt-16 md:mt-16 grid max-w-2xl grid-cols-2 gap-y-20 gap-x-10 md:flex md:flex-col md:gap-16 lg:max-w-none lg:grid-cols-2">
-          {articles.map((article) => (
-            <Article key={article.slug} article={article} />
-          ))}
-        </div>
-      </Container> */}
-
       <Container id="projects" className="mt-12 md:mt-12">
         <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
           Projects
@@ -148,18 +120,4 @@ export default function Home({ articles }) {
       </Container>
     </>
   );
-}
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === "production") {
-    await generateRssFeed();
-  }
-
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  };
 }

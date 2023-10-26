@@ -47,7 +47,8 @@ export default function Document() {
       <Head>
         <meta name="theme-color" content="#000000"/>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
+        <link rel="apple-touch-icon" href="/iconx/apple-touch-icon.png"/>
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="alternate"
