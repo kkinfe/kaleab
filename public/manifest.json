@@ -1,0 +1,30 @@
+{
+  "name": "Kaleab K. Tekleab's Official Website",
+  "short_name": "KK's Website",
+  "description": "Kaleab K. Tekleab's Official Website",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "icons": [
+    {
+      "src": "/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons-256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

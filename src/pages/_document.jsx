@@ -45,7 +45,10 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
+        <meta name="theme-color" content="#000000"/>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         <link
           rel="alternate"
           type="application/rss+xml"

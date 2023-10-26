@@ -34,7 +34,7 @@ export default function App({ Component, pageProps, router }) {
           type: "website",
           locale: "en_IE",
           url: "https://kkinfe.github.io/",
-          siteName: "Kaleab Kinfe",
+          siteName: "Kaleab K. Tekleab's Official Website",
         }}
         twitter={{
           handle: "@Kaleabkinfe",
