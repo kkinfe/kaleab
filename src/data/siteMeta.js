@@ -1,12 +1,12 @@
 const siteMeta = {
   title: "Kaleab K. Tekleab's Official Website",
   description:
-    "Kaleab Kinfe is a Software developer, freelancer and open source practitioner.",
+    "Explore insightful blogs and creative projects on Kaleab K. Tekleab's Official Website",
   copyright: "Kaleab Kinfe",
   author: {
     name: "Kaleab Kinfe",
     email: "mailto:kaleab.kinfe.tekleab@gmail.com",
-    twitter: "https://twitter.com/kkinfe",
+    twitter: "https://twitter.com/",
     instagram: "https://instagram.com/kaleabkinfe_",
     github: "https://github.com/kkinfe",
     linkedin: "https://linkedin.com/in/kaleabkinfe",
@@ -35,7 +35,7 @@ export const projects = [
   {
     name: "Portifolio Website",
     description: "Elegant portfolio website for shares your work and journey.",
-    link: { href: "https://github.com/kkinfe", label: "github.com" },
+    link: { href: "https://kkinfe.github.io", label: "on Github-Pages" },
   },
 ];
 

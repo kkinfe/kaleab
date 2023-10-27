@@ -13,9 +13,7 @@ const nextConfig = {
 const withPWA = nextPWA({
   disable: process.env.NODE_ENV === 'development',
   dest: "public",
-  register: true,
-  skipWaiting: true,
-  disableDevLogs: true,
+  swSrc: 'service-worker.js',
 });
 
 const withMDX = nextMDX({
