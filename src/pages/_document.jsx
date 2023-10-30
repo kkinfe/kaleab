@@ -49,7 +49,7 @@ export default function Document() {
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
         <link rel="apple-touch-icon" href="/iconx/apple-touch-icon.png"/>
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link
           rel="alternate"
           type="application/rss+xml"

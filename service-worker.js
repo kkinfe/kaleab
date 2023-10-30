@@ -20,37 +20,14 @@ import {
 skipWaiting();
 clientsClaim();
 
-const WB_MANIFEST = self.__WB_MANIFEST;
-
-WB_MANIFEST.push(
-  {
-    url: "/",
-    revision: "1234567890",
-  },
-  {
-    url: "/projects",
-    revision: "1234567891",
-  },
-  {
-    url: "/blogs",
-    revision: "1234567892",
-  }
-);
-
-precacheAndRoute(WB_MANIFEST);
+precacheAndRoute(self.__WB_MANIFEST);
 
 cleanupOutdatedCaches();
+
 registerRoute(
   "/",
   new NetworkFirst({
     cacheName: "start-url",
-    plugins: [
-      new ExpirationPlugin({
-        maxEntries: 1,
-        maxAgeSeconds: 86400,
-        purgeOnQuotaError: !0,
-      }),
-    ],
   }),
   "GET"
 );
@@ -144,10 +121,7 @@ setDefaultHandler(new StaleWhileRevalidate());
 setCatchHandler(({ event }) => {
   switch (event.request.destination) {
     case "document":
-      return matchPrecache("/");
-      break;
-    case "image":
-      return matchPrecache("images/kaleab-head.jpg");
+      return matchPrecache(event.request)
       break;
     case "font":
       return matchPrecache(FALLBACK_FONT_URL);

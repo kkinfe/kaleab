@@ -39,6 +39,10 @@ function HamburgernIcon(props) {
   );
 }
 
+const imageLoader = ({src}) => {
+  return `https://www.gravatar.com/${src}?size=512x512&q=$75`
+}
+
 function MobileNavItem({ href, children }) {
   return (
     <li>
@@ -165,7 +169,8 @@ function Avatar({ large = false, className, ...props }) {
       {...props}
     >
       <Image
-        src={avatarImage}
+        loader={imageLoader}
+        src="avatar/adb4591e2216aa1a7ed89a5097a6351f"
         alt=""
         sizes={large ? "4rem" : "2.25rem"}
         className={clsx(
