@@ -6,6 +6,7 @@ const ASSETS = [
     '/blogs',
     '/projects',
     '/sw.js',
+    '/favicon.ico',
     'https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75'
 ]
 
