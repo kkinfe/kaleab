@@ -2,11 +2,11 @@
 const CACHE = 'cache-v1'
 
 const ASSETS = [
-    '/_next/static/zme-eJskRpyK5yhmgDOTL/_buildManifest.js',
-    '/_next/static/zme-eJskRpyK5yhmgDOTL/_ssgManifest.js',
+    '/_next/static/0Z0Xg0yRUEgFNKF0ekZVY/_buildManifest.js',
+    '/_next/static/0Z0Xg0yRUEgFNKF0ekZVY/_ssgManifest.js',
     '/_next/static/chunks/framework-0c7baedefba6b077.js',
     '/_next/static/chunks/main-b21f03ef96b71999.js',
-    '/_next/static/chunks/pages/_app-1aa4f2cede653255.js',
+    '/_next/static/chunks/pages/_app-31f77641e6427abd.js',
     '/_next/static/chunks/pages/_error-08a9db0f433628d8.js',
     '/_next/static/chunks/pages/blogs-94bebc4e3c633d71.js',
     '/_next/static/chunks/pages/index-2d14a970381eb21d.js',
