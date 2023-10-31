@@ -6,14 +6,7 @@ import rehypePresetMinify from 'rehype-preset-minify'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'www.gravatar.com',
-        port: '',
-        pathname: '/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512x512',
-      },
-    ],
+    domains: "https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75"
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
