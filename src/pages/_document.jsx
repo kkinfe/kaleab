@@ -50,6 +50,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
         <link rel="apple-touch-icon" href="/iconx/apple-touch-icon.png"/>
         <link rel="manifest" href="/site.webmanifest" />
+        <link	rel="preload"	as="image"	href="https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75"/>
         <link
           rel="alternate"
           type="application/rss+xml"
