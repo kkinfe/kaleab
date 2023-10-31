@@ -2,34 +2,9 @@
 const CACHE = 'cache-v1'
 
 const ASSETS = [
-    '/_next/static/0Z0Xg0yRUEgFNKF0ekZVY/_buildManifest.js',
-    '/_next/static/0Z0Xg0yRUEgFNKF0ekZVY/_ssgManifest.js',
-    '/_next/static/chunks/framework-0c7baedefba6b077.js',
-    '/_next/static/chunks/main-b21f03ef96b71999.js',
-    '/_next/static/chunks/pages/_app-31f77641e6427abd.js',
-    '/_next/static/chunks/pages/_error-08a9db0f433628d8.js',
-    '/_next/static/chunks/pages/blogs-94bebc4e3c633d71.js',
-    '/_next/static/chunks/pages/index-2d14a970381eb21d.js',
-    '/_next/static/chunks/pages/projects-7edb839644924fc5.js',
-    '/_next/static/chunks/webpack-e0625a99da900f0f.js',
-    '/_next/static/css/f971f74325741086.css',
-    '/favicon.ico',
-    '/iconx/android-144x144.png',
-    '/iconx/android-192x192.png',
-    '/iconx/android-36x36.png',
-    '/iconx/android-48x48.png',
-    '/iconx/android-72x72.png',
-    '/iconx/android-96x96.png',
-    '/iconx/android-chrome-192x192.png',
-    '/iconx/android-chrome-512x512.png',
-    '/iconx/android-chrome-maskable-192x192.png',
-    '/iconx/android-chrome-maskable-512x512.png',
-    '/iconx/apple-touch-icon.png',
-    '/robots.txt',
-    '/site.webmanifest',
-    '/sitemap.xml',
-    '/sw.js',
-    'https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75'
+    '/',
+    'blogs',
+    '/sw.js'
 ]
 
 self.addEventListener('install', (event) => {
