@@ -18,14 +18,14 @@ const nextConfig = {
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
-  swcMinify: true, 
+  swcMinify: true,
 }
 
-const withPWA = nextPWA ({
+const withPWA = nextPWA({
   dest: "public",
   register: true,
-  skipWaiting: true,  
-  swSrc: 'service-worker.js'
+  skipWaiting: true,
+  swSrc: 'src/service-worker.js'
 })
 
 const withMDX = nextMDX({
