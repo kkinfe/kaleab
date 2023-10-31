@@ -1,5 +1,4 @@
 import nextMDX from '@next/mdx'
-import nextPWA from 'next-pwa'
 import remarkGfm from 'remark-gfm'
 import rehypePrismPlus from 'rehype-prism-plus'
 import remarkCodeTitles from './src/lib/remark-code-title.mjs'
@@ -21,13 +20,6 @@ const nextConfig = {
   swcMinify: true,
 }
 
-const withPWA = nextPWA({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-  swSrc: 'src/service-worker.js'
-})
-
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
@@ -37,4 +29,4 @@ const withMDX = nextMDX({
   },
 })
 
-export default withPWA(withMDX(nextConfig))
+export default withMDX(nextConfig)
