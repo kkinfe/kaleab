@@ -3,7 +3,8 @@ const CACHE = 'cache-v1'
 
 const ASSETS = [
     '/',
-    'blogs',
+    '/blogs',
+    '/projects',
     '/sw.js',
     'https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75'
 ]
