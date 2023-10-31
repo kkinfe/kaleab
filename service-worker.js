@@ -17,7 +17,7 @@ import {
   cleanupOutdatedCaches,
 } from "workbox-precaching";
 
-self.skipWaiting();
+skipWaiting();
 clientsClaim();
 
 precacheAndRoute(self.__WB_MANIFEST);
