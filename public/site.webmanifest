@@ -27,8 +27,8 @@
     "purpose": "maskable"
   }
 ],
-  "id":"/?utm_source=web_app_manifest",
-  "start_url": "/?utm_source=web_app_manifest",
+  "id":"/",
+  "start_url": "/",
   "orientation": "natural",
   "display_override": ["fullscreen", "minimal-ui"],
   "display": "standalone",
