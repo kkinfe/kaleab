@@ -36,9 +36,9 @@ export function BlogLayout({
       <NextSeo
         title={meta.title}
         description={siteMeta.description}
-        canonical={`https://kkinfe.github.io${router.pathname}`}
+        canonical={`https://kkinfe.github.io/${router.pathname}`}
         openGraph={{
-          url: `https://kkinfe.github.io${router.pathname}`,
+          url: `https://kkinfe.github.io/${router.pathname}`,
           images: [
             {
               url: `https://kkinfe.github.io/favicon.ico`,

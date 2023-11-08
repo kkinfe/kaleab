@@ -112,7 +112,7 @@ export default function Home({ articles }) {
         </div>
       </Container>
 
-      <Container id="blogs" className="mt-12 md:mt-12">
+      {/* <Container id="blogs" className="mt-12 md:mt-12">
         <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
           Blogs
         </h1>
@@ -121,7 +121,7 @@ export default function Home({ articles }) {
             <Article key={article.slug} article={article} />
           ))}
         </div>
-      </Container>
+      </Container> */}
 
       <Container id="projects" className="mt-12 md:mt-12">
         <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
