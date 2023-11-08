@@ -15,6 +15,12 @@ const siteMeta = {
 };
 export const projects = [
   {
+    name: "Geez",
+    description:
+      "Our Geez Documentation website is your one-stop resource for everything related to Geez",
+    link: { href: "https://github.com/kkinfe/Geez", label: "github" },
+  },
+  {
     name: "Ecovida",
     description:
       "Indulge in a shopping experience with our e-commerce platform, thoughtfully crafted and powered by an artful blend of React, TypeScript, Redux, Firebase, and Stripe. ",
@@ -35,8 +41,8 @@ export const projects = [
   {
     name: "Portifolio Website",
     description: "Elegant portfolio website for shares your work and journey.",
-    link: { href: "https://kkinfe.github.io", label: "on Github-Pages" },
-  },
+    link: { href: "https://github.com/kkinfe/kkinfe.github.io", label: "github.com" },
+  }
 ];
 
 export default siteMeta;
