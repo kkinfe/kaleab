@@ -18,7 +18,7 @@ export const projects = [
     name: "Geez",
     description:
       "Our Geez Documentation website is your one-stop resource for everything related to Geez",
-    link: { href: "https://github.com/kkinfe/Geez", label: "github" },
+    link: { href: "https://github.com/kkinfe/Geez", label: "github.com" },
   },
   {
     name: "Ecovida",
