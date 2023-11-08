@@ -8,8 +8,8 @@ import {
   GitHubIcon,
   LinkedInIcon,
   MailIcon,
-} from "@/components/icons/SocialIcons";
-import {LinkIcon} from '@/components/icons/LinkIcon'
+} from "@/components/icons/Icons";
+import { LinkIcon } from '@/components/icons/Icons'
 
 import { generateRssFeed } from "@/lib/generateRssFeed";
 import { getAllArticles } from "@/lib/getAllArticles";
@@ -112,17 +112,16 @@ export default function Home({ articles }) {
         </div>
       </Container>
 
-      
-      {/* <Container id="blogs" className="mt-12 md:mt-12">
-        <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+      <Container id="blogs" className="mt-12 md:mt-12">
+        <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
           Blogs
         </h1>
-        <div className="mx-auto mt-16 md:mt-16 grid max-w-2xl grid-cols-2 gap-y-20 gap-x-10 md:flex md:flex-col md:gap-16 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto mt-12 md:mt-12 sm:grid max-w-3xl sm:grid-cols-2 sm:gap-y-10 gap-x-10 flex flex-col gap-16 lg:max-w-none lg:grid-cols-2">
           {articles.map((article) => (
             <Article key={article.slug} article={article} />
           ))}
         </div>
-      </Container> */}
+      </Container>
 
       <Container id="projects" className="mt-12 md:mt-12">
         <h1 className="text-xl w-auto font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
@@ -130,9 +129,9 @@ export default function Home({ articles }) {
         </h1>
         <ul
           role="list"
-          className="mx-auto mt-8 md:mt-8 sm:grid max-w-3xl sm:grid-cols-2 sm:gap-y-10 gap-x-10 flex flex-col gap-16 lg:max-w-none lg:grid-cols-2"
+          className="mx-auto mt-12 md:mt-12 sm:grid max-w-3xl sm:grid-cols-2 sm:gap-y-10 gap-x-10 flex flex-col gap-16 lg:max-w-none lg:grid-cols-2"
         >
-          {projects.map((project) => (
+          {projects.slice(0, 4).map((project) => (
             <Card as="li" key={project.name}>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>

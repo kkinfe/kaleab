@@ -34,11 +34,11 @@ export function BlogLayout({
   return (
     <>
       <NextSeo
-        title="Blogs - Kaleab K. Tekleab's Official Website"
+        title={meta.title}
         description={siteMeta.description}
-        canonical="https://kkinfe.github.io"
+        canonical={`https://kkinfe.github.io${router.pathname}`}
         openGraph={{
-          url: "https://kkinfe.github.io",
+          url: `https://kkinfe.github.io${router.pathname}`,
           images: [
             {
               url: `https://kkinfe.github.io/favicon.ico`,
@@ -48,7 +48,7 @@ export function BlogLayout({
               type: "image/png",
             },
           ],
-          siteName: "Kaleab K. Tekleab's official website",
+          siteName: "kkinfe.github.io",
         }}
       />
 

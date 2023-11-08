@@ -5,6 +5,7 @@ import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
 import { Container } from "@/components/Container";
+import avatarImage from '@/images/kaleab-head.jpg'
 
 import { Fragment, useEffect, useRef } from "react";
 
@@ -92,6 +93,7 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/blogs">Blogs</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
               </ul>
@@ -129,7 +131,8 @@ function NavItem({ href, children }) {
 function DesktopNavigation(props) {
   return (
     <nav {...props}>
-      <ul className="flex rounded-full bg-white/40 px-3 text-sm font-medium text-zinc-800 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200">        
+      <ul className="flex rounded-full bg-white/40 px-3 text-sm font-medium text-zinc-800 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200">
+        <NavItem href="/about">About</NavItem>
         <NavItem href="/blogs">Blogs</NavItem>
         <NavItem href="/projects">Projects</NavItem>
       </ul>
@@ -164,18 +167,13 @@ function Avatar({ large = false, className, ...props }) {
       {...props}
     >
       <Image
-        src="https://www.gravatar.com/avatar/adb4591e2216aa1a7ed89a5097a6351f?size=512&q=$75"
-        alt="Kaleab's Avatar" 
-        loader={({ src }) => {
-        const url = new URL(src);
-        return url.toString();
-      }}
+        src={avatarImage}
+        alt="Kaleab's Avatar"
         sizes={large ? "4rem" : "2.25rem"}
         className={clsx(
           "rounded-full bg-zinc-100 object-cover dark:bg-zinc-800",
           large ? "h-16 w-16" : "h-9 w-9"
         )}
-        priority
       />
     </Link>
   );

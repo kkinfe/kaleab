@@ -45,4 +45,8 @@ export const projects = [
   }
 ];
 
+export const resume = [
+
+];
+
 export default siteMeta;

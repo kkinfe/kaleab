@@ -6,14 +6,14 @@ async function importArticle(articleFilename) {
     `../pages/blogs/${articleFilename}`
   );
   return {
-    slug: articleFilename.replace(/(\/index)?\.mdx$/, ""),
+    slug: articleFilename.replace(/(\/index)?\.mdx$/, ''),
     ...meta,
     component,
   };
 }
 
 export async function getAllArticles() {
-  let articleFilenames = await glob(["*.mdx", "*/index.mdx"], {
+  let articleFilenames = await glob(['*.mdx', '*/index.mdx'], {
     cwd: path.join(process.cwd(), "src/pages/blogs"),
   });
 
