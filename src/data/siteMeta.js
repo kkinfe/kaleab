@@ -23,20 +23,20 @@ export const projects = [
   {
     name: "Ecovida",
     description:
-      "Indulge in a shopping experience with our e-commerce platform, thoughtfully crafted and powered by an artful blend of React, TypeScript, Redux, Firebase, and Stripe. ",
-    link: { href: "https://github.com/kkinfe", label: "github.com" },
+      "Welcome to Ecovida an e-commerce platform, where shopping meets seamless indulgence!",
+    link: { href: "https://github.com/kkinfe/ecovida", label: "github.com" },
   },
   {
     name: "Smart-Sprouts",
     description:
       "Automating Efficient Irrigation for Plant Growth.",
-    link: { href: "https://github.com/kkinfe", label: "github.com" },
+    link: { href: "https://github.com/kkinfe/Smart-Sprouts", label: "github.com" },
   },
   {
     name: "NodeBase",
     description:
       "A Node.js starter template with TypeScript, SWC, Jest, nodemon, Prettier, Husky, cross-env, and optimized workflows for top-notch web development.",
-    link: { href: "https://github.com/kkinfe", label: "github.com" },
+    link: { href: "https://github.com/kkinfe/NodeBase", label: "github.com" },
   },
   {
     name: "Portifolio Website",
@@ -46,7 +46,29 @@ export const projects = [
 ];
 
 export const resume = [
+  {
+    company: 'Birrbet PLC',
+    title: 'Full Stack Developer',
+    start: '2022',
+    end: {
+      label: 'Present',
+      dateTime: new Date().getFullYear(),
+    },
+  },
+  {
+    company: 'Supernova',
+    title: 'Senior React Developer',
 
+    start: '2020',
+    end: '2022',
+  },
+  {
+    company: 'Securicom Advanced Technologies',
+    title: 'React Developer',
+
+    start: '2019',
+    end: '2020',
+  },
 ];
 
 export default siteMeta;

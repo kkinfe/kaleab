@@ -48,7 +48,7 @@ export default function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl text-lg">
           <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software developer, freelancer, and open source enthusiast.
+            Software developer, freelancer, and problem solver.
           </h1>
           <p className="mt-6 prose dark:prose-invert">
             I&apos;m Kaleab, a passionate technologist with a diverse
