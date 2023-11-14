@@ -7,7 +7,7 @@ import siteMeta from "@/data/siteMeta";
 
 function Article({ article }) {
   return (
-    <article className="grid grid-cols-2 md:items-baseline">
+    <article className="md:items-baseline">
       <Card className="md:col-span-3">
         <Card.Title href={`/blogs/${article.slug}`}>{article.title}</Card.Title>
         <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -31,7 +31,7 @@ export default function ArticlesIndex({ articles }) {
       <NextSeo
         title="Blogs - Kaleab K. Tekleab's Official Website"
         description={siteMeta.description}
-        canonical="https://kkinfe.github.io"
+        canonical="https://kkinfe.github.io/blogs"
         openGraph={{
           url: "https://kkinfe.github.io",
           images: [
@@ -43,12 +43,12 @@ export default function ArticlesIndex({ articles }) {
               type: "image/png",
             },
           ],
-          siteName: "Kaleab K. Tekleab's official website",
+          siteName: "kkinfe.github.io",
         }}
       />
       <SimpleLayout title={headline} intro={intro}>
-        <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div className="flex max-w-3xl flex-col space-y-16">
+        <div className=" md:pl-6">
+          <div className="mx-auto mt-12 md:mt-12 sm:grid max-w-3xl sm:grid-cols-2 sm:gap-y-10 gap-x-10 flex flex-col gap-16 lg:max-w-none lg:grid-cols-2">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
