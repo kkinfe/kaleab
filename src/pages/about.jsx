@@ -61,7 +61,7 @@ export default function About() {
     return (
         <>
             <NextSeo
-                title="About - Kaleab K. Tekleab"
+                title="About - Kaleab K. Tekleab's Official Website"
                 description={siteMeta.description}
                 canonical="https://kkinfe.github.io/about"
                 openGraph={{
