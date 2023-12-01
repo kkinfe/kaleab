@@ -47,27 +47,21 @@ export const projects = [
 
 export const resume = [
   {
-    company: 'Birrbet PLC',
+    company: 'Supernova',
     title: 'Full Stack Developer',
-    start: '2022',
+
+    start: '2021',
     end: {
       label: 'Present',
       dateTime: new Date().getFullYear(),
     },
   },
   {
-    company: 'Supernova',
-    title: 'Senior React Developer',
-
-    start: '2020',
-    end: '2022',
-  },
-  {
     company: 'Securicom Advanced Technologies',
     title: 'React Developer',
 
-    start: '2019',
-    end: '2020',
+    start: '2020',
+    end: '2021',
   },
 ];
 

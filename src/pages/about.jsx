@@ -92,12 +92,10 @@ export default function About() {
                     </div>
                     <div className="lg:order-first lg:row-span-2">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            A Lifelong Passion for Software Design: The Journey of Kaleab <abbr title="Kinfe" className="no-underline">K.</abbr> Tekleab.
+                            I’m Kaleab Kinfe. I live in Addis Ababa City, where I design the future.
                         </h1>
                         <div className="mt-6 text-lg prose space-y-7 dark:prose-invert text-zinc-600 dark:text-zinc-400">
-                            <p>From the moment I laid my eyes on a dusty computer programming book in my school library more than a decade ago, my life took a transformative turn. I am Kaleab Kinfe, a passionate software designer, and my story is a testament to the enduring power of curiosity, determination, and innovation in the world of technology.</p>
-                            <p>For me, software design is not just about writing lines of code and architecting systems; it&apos;s about creating solutions that enhance the lives of people and solve real-world problems. One project that deeply resonates with me is the mobile app I designed for a nonprofit organization. This app aimed to connect volunteers with individuals in need, and its impact was profound. Thousands of volunteers were able to extend a helping hand to those requiring assistance, making a significant difference in their lives. This project reinforced my belief in using my skills for the greater good and highlighted the importance of empathy in the world of technology</p>
-                            <p>In conclusion, my journey in the world of software design has been marked by curiosity, innovation, and a deep commitment to making a positive impact. My story is a testament to the enduring spirit of creativity and the boundless potential of technology to shape our world. As I continue on this path, I am driven by the belief that my passion for software design will continue to fuel my desire to create meaningful solutions and inspire those around me to do the same.</p>
+                            <p>👋 Howdy! Thanks for stopping by. I’m Kaleab and I’ve been doing technology things since acoustic modem couplers were a thing. I love Open Source and exploring different programming languages. Some highlights about me and my activities:</p>
                         </div>
                     </div>
                     <div className="space-y-10 lg:pl-16 xl:pl-24">
